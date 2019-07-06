@@ -1,0 +1,228 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+hrm
+</name>
+</assembly>
+<members>
+<member name="P:hrm.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:hrm.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:hrm.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:hrm.ds_HRM.dt_DepartmentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:hrm.ds_HRM.dt_DesignationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:hrm.ds_HRM.dt_EmployeeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:hrm.ds_HRM.dt_DepartmentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:hrm.ds_HRM.dt_DesignationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:hrm.ds_HRM.dt_EmployeeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:hrm.ds_HRM.dt_DepartmentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:hrm.ds_HRM.dt_DesignationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:hrm.ds_HRM.dt_EmployeeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:hrm.ds_HRM">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:hrm.hrmDataSet.att_TypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.cost_CentersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.DepartmentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.DesignationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.emp_AttendanceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.emp_In_outDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.EmployeeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.usersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.att_TypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.cost_CentersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.DepartmentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.DesignationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.emp_AttendanceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.emp_In_outRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.EmployeeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.usersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:hrm.hrmDataSet.att_TypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:hrm.hrmDataSet.cost_CentersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:hrm.hrmDataSet.DepartmentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:hrm.hrmDataSet.DesignationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:hrm.hrmDataSet.emp_AttendanceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:hrm.hrmDataSet.emp_In_outRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:hrm.hrmDataSet.EmployeeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:hrm.hrmDataSet.usersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:hrm.hrmDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:hrm.hrmDataSetTableAdapters.att_TypeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:hrm.hrmDataSetTableAdapters.cost_CentersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:hrm.hrmDataSetTableAdapters.DepartmentTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:hrm.hrmDataSetTableAdapters.DesignationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:hrm.hrmDataSetTableAdapters.emp_AttendanceTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:hrm.hrmDataSetTableAdapters.emp_In_outTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:hrm.hrmDataSetTableAdapters.EmployeeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:hrm.hrmDataSetTableAdapters.usersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:hrm.hrmDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(hrm.hrmDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:hrm.hrmDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(hrm.hrmDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:hrm.hrmDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(hrm.hrmDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:hrm.hrmDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:hrm.hrmDataSetTableAdapters.TableAdapterManager.UpdateAll(hrm.hrmDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:hrm.hrmDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:hrm.hrmDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:hrm.hrmDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

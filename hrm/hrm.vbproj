@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E748884A-E6FA-4525-99BC-B72ED93448DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>hrm.My.MyApplication</StartupObject>
+    <RootNamespace>hrm</RootNamespace>
+    <AssemblyName>hrm</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>hrm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>hrm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ds_HRM.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_HRM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds_HRM.vb">
+      <DependentUpon>ds_HRM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reports\attendance_Report.Designer.vb">
+      <DependentUpon>attendance_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reports\attendance_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports\department_Report.Designer.vb">
+      <DependentUpon>department_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reports\department_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports\designation_Report.Designer.vb">
+      <DependentUpon>designation_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reports\designation_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports\emp_Profile_Report.Designer.vb">
+      <DependentUpon>emp_Profile_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reports\emp_Profile_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm_Attendance.Designer.vb">
+      <DependentUpon>frm_Attendance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm_Attendance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm_Designation.Designer.vb">
+      <DependentUpon>frm_Designation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm_Designation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm_Find_Dept_ID.Designer.vb">
+      <DependentUpon>frm_Find_Dept_ID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm_Find_Dept_ID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm_Find_desig_id.Designer.vb">
+      <DependentUpon>frm_Find_desig_id.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm_Find_desig_id.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm_Genrate_Salary.Designer.vb">
+      <DependentUpon>frm_Genrate_Salary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm_Genrate_Salary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm_Main_menu.Designer.vb">
+      <DependentUpon>frm_Main_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm_Main_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm_Mark_absent_rest.Designer.vb">
+      <DependentUpon>frm_Mark_absent_rest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm_Mark_absent_rest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm_profile.Designer.vb">
+      <DependentUpon>frm_profile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm_profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\log in form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\log in form.Designer.vb">
+      <DependentUpon>log in form.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frm_Department.Designer.vb">
+      <DependentUpon>frm_Department.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frm_Department.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports\rpt_Departments1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Departments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\rpt_Designations1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Designations.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\rpt_Emp_in_out1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Emp_in_out.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\rpt_Emp_profile.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Emp_profile.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\rpt_Salary1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Salary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\salary_Report.Designer.vb">
+      <DependentUpon>salary_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reports\salary_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hrmDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hrmDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hrmDataSet.vb">
+      <DependentUpon>hrmDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="reports\attendance_Report.resx">
+      <DependentUpon>attendance_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\department_Report.resx">
+      <DependentUpon>department_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\designation_Report.resx">
+      <DependentUpon>designation_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\emp_Profile_Report.resx">
+      <DependentUpon>emp_Profile_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm_Attendance.resx">
+      <DependentUpon>frm_Attendance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm_Designation.resx">
+      <DependentUpon>frm_Designation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm_Find_Dept_ID.resx">
+      <DependentUpon>frm_Find_Dept_ID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm_Find_desig_id.resx">
+      <DependentUpon>frm_Find_desig_id.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm_Genrate_Salary.resx">
+      <DependentUpon>frm_Genrate_Salary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm_Main_menu.resx">
+      <DependentUpon>frm_Main_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm_Mark_absent_rest.resx">
+      <DependentUpon>frm_Mark_absent_rest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm_profile.resx">
+      <DependentUpon>frm_profile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\log in form.resx">
+      <DependentUpon>log in form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frm_Department.resx">
+      <DependentUpon>frm_Department.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\rpt_Departments.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Departments1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\rpt_Designations.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Designations1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\rpt_Emp_in_out.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Emp_in_out1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\rpt_Emp_profile.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Emp_profile.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\rpt_Salary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Salary1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\salary_Report.resx">
+      <DependentUpon>salary_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ds_HRM.xsc">
+      <DependentUpon>ds_HRM.xsd</DependentUpon>
+    </None>
+    <None Include="ds_HRM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_HRM.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ds_HRM.xss">
+      <DependentUpon>ds_HRM.xsd</DependentUpon>
+    </None>
+    <None Include="hrmDataSet.xsc">
+      <DependentUpon>hrmDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hrmDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hrmDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hrmDataSet.xss">
+      <DependentUpon>hrmDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="images\default.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\in.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\out.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
